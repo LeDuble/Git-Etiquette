@@ -295,7 +295,7 @@ License
 
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-You can read the full license [here](https://github.com/LeDuble/Git-Etiquette/blob/main/LICENSE.md)
+You can read the full license [here](https://github.com/LeDuble/Git-Etiquette/blob/master/LICENSE.md)
 
 
 ---
