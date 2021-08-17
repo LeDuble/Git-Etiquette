@@ -276,7 +276,7 @@ Author
 How to Contribute
 </h2>
 
-1. Clone repository and create a new branch: **__`git checkout https://google.com -b <insertBranchNameHere>`__**
+1. Clone repository and create a new branch: **__`git checkout https://github.com/LeDuble/Git-Etiquette.git -b <insertBranchNameHere>`__**
 2. Add changes to your branch
 3. Create a Pull Request with descriptive text.
 4. Also don't forget to leave a star if you like the project!
