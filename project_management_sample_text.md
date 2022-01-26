@@ -79,31 +79,12 @@ When starting a new project - follow these steps
 
 ---
 
-<!-- Starting a projects beta board -->
+<!-- Structure of projects beta board -->
 <h2>
 <a id="descr" href="#one" aria-hidden="true"></a>
-When starting a new project - follow these steps
+Structure of projects beta board
 </h2>
-
-1. **Make a new repository**
-2. **Start a projects beta board**
-3. **Create a team**
-   1. Add people who will be working on the project
-   2. Add the project related repositories via 'repository' tab
-   3. Start a discussion in the team page 
-      1. Include link to it (for easy and quick access)
-      2. Pin it
-4. **Create a to-do list in issues page**
-   1. Add following headers: **Major**, **Minor** and **Other**
-   * You can either **start issues** from to-do list
-      1. Edit to-do list
-         * template (note it's important to include `- [ ]` to make it work):
-         * _```- [] <write issue here>```_
-      2. Save it
-      3. On the right side of the text appears "convert to issue" button. Click it. 
-      * <img src="https://cdn.discordapp.com/attachments/907908132884320316/933374215195852820/unknown.png" width="500">
-      
-   * or **if an issue already exist**, then type hashtag (#) followed by specified number (e.g. `#2`)
+You want to organize the projects board views in a way that everything is seen in the so called landing page or the first page when you opend the projects beta board. 
 
 
 (<a href="#table-of-contents">back to top</a>)
