@@ -11,7 +11,7 @@ body:
       Thanks for taking the time to report a Git-Etiquette bug! 
       Only fill this form if you're 100% sure you've found a bug and can describe it down below.
 - type: dropdown
-  attritubes:
+  attributes:
     label: Type of bug
     description: What type of bug is it? Pick one or multiple ones that describes the bug you found.
     multiple: true
