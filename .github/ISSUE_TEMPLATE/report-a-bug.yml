@@ -18,21 +18,23 @@ body:
       - Grammar error
       - Media is broken
       - Other
-    validations:
-      required: true
+  validations:
+    required: true
+
 - type: textarea
   attributes:
     label: Bug description
     description: Describe the bug down below in the text field.
     placeholder: |
       example: "Cheat Sheet section have outdated links that don't work"
-    validations:
-      required: true
+  validations:
+    required: true
+
 - type: textarea
   attributes:
     label: Solution
     description: Share your solution to fix the problem.
     placeholder: |
       example: ""
-    validations:
-      required: true
+  validations:
+    required: true
