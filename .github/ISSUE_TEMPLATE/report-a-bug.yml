@@ -1,5 +1,6 @@
 name: Report bug
 description: Report a bug in Git-Etiquette.
+title: "[Bug]: "
 labels: 'Unconfirmed: Bug'
 assignees:
   - LeDuble
