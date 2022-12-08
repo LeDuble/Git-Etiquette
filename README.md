@@ -201,18 +201,24 @@ Gitignore is essential part of the repository and workflow. It prevents __unnece
 Adding .gitignore into already existing repository
 </h2>
 
+When attempting to ignore a file (or files) that's already tracked in the repository, then do this:
+
 1. Commit all changes
-2. Remove everything from the repository
+2. Removes any changed files from the index (staging phase).
    * **__`git rm -r --cached .`__**
       - "**_rm_**" - remove command
       - "**_-r_**" - allow recursive removal
       - "**_-cached_**" - only remove files from the index. Your files will still be there.
       - "**_._**" indicates all files will be untracked. Specific file with "git rm -r foo.txt"
-3. Re-add everything
+   * With this command we untrack all of the files that have already been added to the repository. **Tl:dr** stop tracking but not delete from the system.
+3. Add .gitignore file
+4. Re-add everything
    * **__`git add .`__**
-4. Commit 
+5. Commit 
    * **__`git commit -m "<insertCommentsHere>"`__**
-5. Last step: **__`git push`__**
+6. Last step: **__`git push`__**
+
+Becaution here as this will DELETE the file (or files) that is specified in the .gitignore from the github repository.
 
 (<a href="#table-of-contents">back to top</a>)
 
