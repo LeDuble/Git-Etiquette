@@ -130,7 +130,8 @@ How to Create a Branch (via Git)
 
 ### adding it to working branch (not master)
 * **__`git add –i`__**
-   * Opens interactive menu and it is used to update index using the current content.
+   * Opens interactive menu and it is used to update index using the current content. 
+      * There are alternative ways (e.g. `git add .`) to add changes to staging area but, they are not preferred unless you are experienced git user. Interactive menu gives easy access to control what changes we want to add to staging phase and push forward.
 * **__`git status`__**
    * Shows which files are tracked by Git and which changes have been staged (which have been not).
 * **__`git restore --staged <insertFileNameToUnstage>`__**
