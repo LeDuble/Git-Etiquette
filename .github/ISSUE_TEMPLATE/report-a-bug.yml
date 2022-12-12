@@ -1,0 +1,41 @@
+name: Report bug
+description: Report a bug in Git-Etiquette.
+title: "[Bug]: "
+labels: 'Unconfirmed: Bug'
+assignees:
+  - LeDuble
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to report a Git-Etiquette bug! 
+      Only fill this form if you're 100% sure you've found a bug and can describe it down below.
+- type: dropdown
+  attributes:
+    label: Type of bug
+    description: What type of bug is it? Pick one or multiple ones that describes the bug you found.
+    multiple: true
+    options:
+      - Grammar error
+      - Media is broken
+      - Other
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Bug description
+    description: Describe the bug down below in the text field.
+    placeholder: |
+      example: "Cheat Sheet section have outdated links that don't work"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Solution
+    description: Share your solution to fix the problem.
+    placeholder: |
+      example: ""
+  validations:
+    required: true
