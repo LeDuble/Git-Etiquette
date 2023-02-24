@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: View to-do list
-    url: https://github.com/LeDuble/Git-Etiquette/issues/1
-    about: See what's currently worked on!
   - name: Suggest a new feature
     url: https://github.com/LeDuble/Git-Etiquette/discussions/new?category=ideas
     about: Suggest new features or additions for Git-Etiquette!
