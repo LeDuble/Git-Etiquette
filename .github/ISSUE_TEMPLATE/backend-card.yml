@@ -1,0 +1,63 @@
+# ----------- default settings ----------- #
+name: Backend card template
+description: Use this when opening a backend-related issue or feature.
+title: "[Backend]: "
+labels: [Backend ⚙️]
+# ----------- optional setting ----------- #
+# ----------- automatically assigns someone each time an issue is created ----------- #
+# assignees:
+#    - <insert assignee(s) here>
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for making time to fill this form!
+      Only fill this form if you're 100% sure you can describe it down below.
+
+- type: checkboxes
+  attributes:
+    label: Prerequisites
+    description: Please make sure you have read and completed all the following.
+    options:
+      - label: I have read the [Git Etiquette](https://github.com/LeDuble/Git-Etiquette). (Required)
+        required: true
+      - label: I agree to follow the [Code of Conduct](). (Required)
+        required: true
+      - label: Are you intending to include tests? (Optional)
+        required: false
+
+- type: textarea
+  attributes:
+    label: Summary (Required)
+    description: Please provide a brief description of the feature.
+    placeholder: |
+      Example: "section b have outdated links that don't work"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Potential Solution (Required)
+    description: Explain in brief how you intend to tackle the issue.
+    placeholder: |
+      example: "add updated links to section b"
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: In which category does the issue belong? (Required)
+    description: Pick one that describe the issue.
+    multiple: false
+    options:
+      - Documentation 📝 - Changes to the documentation.
+      - Feature 🆕 - A new feature.
+      - Style 🖌️ - Changes to formatting (e.g. the code is missing semicolons).
+      - Test ☑️ - Adding/correcting existing tests.
+      - Refactor 🔁 - A code change which isn't a bug fix or adds a feature. It's a restructure of the code without changing the functionality.
+      - BugFix 🐛 - A bug fix.
+      - Chore 👷‍♂️ - Maintenance or change to auxiliary tools.
+      - Add ➕ - Adding essentials to the repository (e.g. .gitignore or example files).
+  validations:
+    required: true
