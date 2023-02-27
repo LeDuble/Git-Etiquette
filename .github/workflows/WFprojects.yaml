@@ -42,9 +42,7 @@ env:
   # ----------------- user related settings (only edit these) ----------------- #
 
   username: LeDuble
-  gh_app_key: ${{ secrets.SECRET_TOKEN }}
-  gh_app_id: ${{ secrets.APP_ID }}
-  gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
+  gh_project_token: ${{ secrets.SECRET_TOKEN }}
   project_number: 5
 
   # ----------------- apps/handles for github actions (ignore for now) ----------------- #
@@ -77,10 +75,8 @@ jobs:
       - name: moves status value to ${{ env.backlog }} # step 1 
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.backlog }}
@@ -124,10 +120,8 @@ jobs:
       - name: If closed, moves status value to ${{ env.done }} # step 1
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.done }}
@@ -193,10 +187,8 @@ jobs:
         if: ${{ github.event.label.name == 'In Progress 🚧' }} # label with name: status/in-progress
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.in_progress }}
@@ -210,10 +202,8 @@ jobs:
         if: ${{ github.event.label.name == 'Done ✔️' }} # label with name: status/done
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.done }}
@@ -227,10 +217,8 @@ jobs:
         if: ${{ github.event.label.name == 'Backlog 📜' }} # label with name: status/backlog
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.backlog }}
@@ -264,10 +252,8 @@ jobs:
       - name: moves status value to ${{ env.ready_for_review }} # step 1 
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.ready_for_review }}
@@ -344,10 +330,8 @@ jobs:
       - name: If closed, moves status value to ${{ env.done }} # step 1
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.done }}
@@ -382,10 +366,8 @@ jobs:
         if: ${{ github.event.action == 'assigned' }} # label with name: status/backlog
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
+          gh_token: ${{ env.gh_project_token }}
           user: ${{ env.username }}
-          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
-          gh_app_id: ${{ secrets.APP_ID }}
-          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.ready_for_review }}         
