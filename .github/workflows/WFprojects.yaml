@@ -42,7 +42,7 @@ env:
   # ----------------- user related settings (only edit these) ----------------- #
 
   username: LeDuble
-  gh_app_key: ${{ secrets.APP_SECRET_TOKEN }}
+  gh_app_key: ${{ secrets.SECRET_TOKEN }}
   gh_app_id: ${{ secrets.APP_ID }}
   gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
   project_number: 5
