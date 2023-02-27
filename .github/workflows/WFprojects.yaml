@@ -42,7 +42,9 @@ env:
   # ----------------- user related settings (only edit these) ----------------- #
 
   username: LeDuble
-  gh_project_token: ${{ secrets.SECRET_TOKEN }}
+  gh_app_key: ${{ secrets.APP_SECRET_TOKEN }}
+  gh_app_id: ${{ secrets.APP_ID }}
+  gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
   project_number: 5
 
   # ----------------- apps/handles for github actions (ignore for now) ----------------- #
@@ -76,7 +78,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.backlog }}
@@ -121,7 +125,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.done }}
@@ -188,7 +194,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.in_progress }}
@@ -203,7 +211,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.done }}
@@ -218,7 +228,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.issue.node_id }}
           status_value: ${{ env.backlog }}
@@ -253,7 +265,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.ready_for_review }}
@@ -331,7 +345,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.done }}
@@ -367,7 +383,9 @@ jobs:
         uses: leonsteinhaeuser/project-beta-automations@v2.0.1
         with:
           user: ${{ env.username }}
-          gh_token: ${{ env.gh_project_token }}
+          gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+          gh_app_id: ${{ secrets.APP_ID }}
+          gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
           project_id: ${{ env.project_number }}
           resource_node_id: ${{ github.event.pull_request.node_id }}
           status_value: ${{ env.ready_for_review }}         
