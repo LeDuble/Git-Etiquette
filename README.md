@@ -464,7 +464,7 @@ Bedrock Rules
 Branching Strategy
 </h2>
 
-<img align="right" width="242" height="622" alt="" src="https://github.com/LeDuble/Git-Etiquettes/blob/main/imgs/logos_tms_orgs/GitStrategySimplified.png">
+<img align="right" width="242" height="622" alt="" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/GitStrategySimplified.png">
 The strategy is based on the Git Flow strategy, where each feature (or issue) is represented by a separate branch. Every new branch created is a feature that is being added or worked for the project. The main branch is the production branch, which is the version that is sent to the customer and is always the working one. The dev branch is where all the feature branches are pull requested to aka merged.
 
 The actual Git Flow strategy also includes release and hotfix branches, which are not included in this strategy. Additonally, version numbering is missing, which might be added later.
@@ -580,9 +580,25 @@ Only use allowed special characters which are " / " and " - " when formatting th
 
 ---
 
+<!-- USEFUL GIT COMMANDS  -->
+<h1>
+<a id="usfgit" href="#usfgit" aria-hidden="true"></a>
+Useful Git Commands
+</h1>
+
+<ol>
+<li><a href="#creabr">How to Create a Branch (via Git)</a></li>
+<li><a href="#dltbr">Deleting Branches Locally & Remotely</a></li>
+<li><a href="#gitig">.gitignore</a></li>
+<li><a href="#addig">Adding .gitignore into already existing repository</a></li>
+<li><a href="#mergbr">Merging Branches</a></li>
+</ol>
+
+(<a href="#table-of-contents">back to top</a>)
+
 <!-- CREATE A BRANCH -->
 <h2>
-<a id="three" href="#three" aria-hidden="true"></a>
+<a id="creabr" href="#creabr" aria-hidden="true"></a>
 How to Create a Branch (via Git)
 </h2>
 
@@ -606,13 +622,13 @@ How to Create a Branch (via Git)
 * **__`git push --set-upstream origin <insertBranchNameHere>`__** 
    * (You can do alias for this)
 
-(<a href="#table-of-contents">back to top</a>)
+(<a href="#usfgit">back to Useful Git Commands</a>)
 
----
+(<a href="#table-of-contents">back to top</a>)
 
 <!-- MERGING BRANCHES -->
 <h2>
-<a id="four" href="#four" aria-hidden="true"></a>
+<a id="mergbr" href="#mergbr" aria-hidden="true"></a>
 Merging Branches
 </h2>
 
@@ -625,13 +641,13 @@ Very important: when merging, make sure that you are on the branch that you want
 
 Always consult before merging directly as it can conflict with others. It is recommended to do pull request instead.
 
-(<a href="#table-of-contents">back to top</a>)
+(<a href="#usfgit">back to Useful Git Commands</a>)
 
----
+(<a href="#table-of-contents">back to top</a>)
 
 <!-- DELETING BRANCHES -->
 <h2>
-<a id="five" href="#five" aria-hidden="true"></a>
+<a id="dltbr" href="#dltbr" aria-hidden="true"></a>
 Deleting Branches Locally / Remotely
 </h2>
 <h3 align="left">Locally</h3>
@@ -643,13 +659,13 @@ Deleting Branches Locally / Remotely
 
 * Or use this **__`git push origin --delete <insertRemoteBranchNameHere>`__** to remove remote branch.
 
-(<a href="#table-of-contents">back to top</a>)
+(<a href="#usfgit">back to Useful Git Commands</a>)
 
----
+(<a href="#table-of-contents">back to top</a>)
 
 <!-- .GITIGNORE -->
 <h2>
-<a id="six" href="#six" aria-hidden="true"></a>
+<a id="gitig" href="#gitig" aria-hidden="true"></a>
 .gitignore
 </h2>
 
@@ -657,13 +673,13 @@ Gitignore is essential part of the repository and workflow. It prevents __unnece
 
 * https://gitignore.io - on this page you will find ready-made .gitignore templates that you can use in your projects.
 
-(<a href="#table-of-contents">back to top</a>)
+(<a href="#usfgit">back to Useful Git Commands</a>)
 
----
+(<a href="#table-of-contents">back to top</a>)
 
 <!-- ADDING .GITIGNORE -->
 <h2>
-<a id="seven" href="#seven" aria-hidden="true"></a>
+<a id="addig" href="#addig" aria-hidden="true"></a>
 Adding .gitignore into already existing repository
 </h2>
 
@@ -685,6 +701,8 @@ When attempting to ignore a file (or files) that's already tracked in the reposi
 6. Last step: **__`git push`__**
 
 Becaution here as this will DELETE the file (or files) that is specified in the .gitignore from the github repository.
+
+(<a href="#usfgit">back to Useful Git Commands</a>)
 
 (<a href="#table-of-contents">back to top</a>)
 
