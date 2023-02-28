@@ -40,23 +40,34 @@ Features
 
 <!-- TABLE OF CONTENTS -->
 <h2>
-<a href="table-of-contents" aria-hidden="true"></a>
+<a id="table-of-contents" href="#table-of-contents" aria-hidden="true"></a>
 Table of Contents
 </h2>
 <ol>
-<li><a href="#descr">Introduction</a></li>
-<li><a href="#one">Bedrock Rules</a></li>
-<li><a href="#two">Formatting Rules</a></li>
-<li><a href="#three">How to Create a Branch (via Git)</a></li>
-<li><a href="#four">Merging Branches</a></li>
-<li><a href="#five">Deleting Branches Locally & Remotely</a></li>
-<li><a href="#six">.gitignore</a></li>
-<li><a href="#seven">Adding .gitignore into already existing repository</a></li>
-<li><a href="#eight">Cheat Sheet</a></li>
-<li><a href="#nine">Authors</a></li>
+<li><a href="#intro">Introduction</a></li>
+<!-- <li><a href="#feat">Features</a></li> -->
+<li><a href="#start">Getting Started</a></li>
+<ul><a href="#proj">- Project board</a></ul>
+<ul><a href="#labe">- The labels for issues </a></ul>
+<ul><a href="#issu">- Issues forms and pull request template </a></ul>
+<ul><a href="#wfile">- Workflow file setup </a></ul>
+<ul><a href="#base">- Base tree for repository </a></ul>
+<ul><a href="#two">- </a></ul>
+<li><a href="#gtst">Git strategy and usage</a></li>
+<ul><a href="#bed">- Bedrock Rules</a></ul>
+<ul><a href="#bran">- Branch Strategy</a></ul>
+<ul><a href="#form">- Formatting Rules</a></ul>
+<li><a href="#usfgit">Useful Git Commands</a></li>
+<ul><a href="#creabr">- How to Create a Branch (via Git)</a></ul>
+<ul><a href="#dltbr">- Deleting Branches Locally & Remotely</a></ul>
+<ul><a href="#gitig">- .gitignore</a></ul>
+<ul><a href="#addig">- Adding .gitignore into already existing repository</a></ul>
+<ul><a href="#mergbr">- Merging Branches</a></ul>
+<li><a href="#chtsht">Cheat Sheet</a></li>
+<li><a href="#orgs">Featured organizations, teams, and projects that utilize the Git Etiquette</a></li>
 <li><a href="#ten">How to Contribute</a></li>
+<li><a href="#nine">Authors</a></li>
 <li><a href="#eleven">License</a></li>
-<li><a href="#twelve">Future Updates</a></li>
 </ol>
 
 ---
