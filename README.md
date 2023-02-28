@@ -80,6 +80,348 @@ My team leader was excited about my personal project I was working on and assign
 
 ---
 
+<!-- Getting started -->
+<h1>
+<a id="start" href="#start" aria-hidden="true"></a>
+Getting started 
+</h1>
+
+<ol>
+<li><a href="#proj">Project board</a></li>
+<li><a href="#labe">The labels for issues </a></li>
+<li><a href="#issu">Issues forms and pull request template </a></li>
+<li><a href="#wfile">Workflow file setup </a></li>
+<li><a href="#base">Base tree for repository </a></li>
+<li><a href="#two"></a></li>
+</ol>
+
+(<a href="#table-of-contents">back to top</a>)
+
+
+<!-- Project board -->
+<h2>
+<a id="proj" href="#proj" aria-hidden="true"></a>
+Project Board
+</h2>
+Here's how you setup your project board, which is a crucial part of automation and project management.
+
+<img align=left width="163" height="287" alt="" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/savechanges.png"></img>
+#### Views
+Project views allow you to view the project from different layouts and are located at the top as tabs.
+
+Set up for each view:
+Name | Layout | Group | Fields
+--- | --- | --- | ---
+*List view by status* | Table | Status | All, except Milestones
+*Board view* | Board | Default | All, except Milestones, Tracks, Tracked by
+*List all* | Table | Default | All, except Milestones
+
+Remember to save changes!
+
+#### Status
+In projects, click the three dots in the top right corner, select Settings, then under Custom Fields, click on Status and add the following statuses (including the emojis):
+<!-- * Unassigned ❕
+* Unlabeled ❗ -->
+* **Backlog 📜**
+* **In Progress 🚧**
+* **Ready for Review 🔍**
+* **Done ✔️**
+
+Also don't forget to remove any default statuses.
+
+#### Example
+You can view the project board of this repository to get an example of what the project board should look like and how the automation is handled.
+
+<a href="https://github.com/users/LeDuble/projects/5/views/1">A project board</a>
+
+(<a href="#start">back to Getting Started</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+<!-- The labels for issues -->
+<h2>
+<a id="labe" href="#labe" aria-hidden="true"></a>
+The labels for issues
+</h2>
+
+#### Featured labels
+* Labels can either be assigned automatically by the automation or manually by the user. It is best to let the automation handle the assignment of labels marked as "automatically" and not add them manually to an issue.
+* when a new issue is opened, it will be automatically assigned the "Backlog 📜" label. If an issue is already labeled as "In Progress 🚧", you can change the label back to "Backlog 📜" if needed.
+
+#### Adding labels to the repository
+You can add labels by going to the repository, clicking on the <i>Issues</i> tab, and then clicking on the <i>Labels</i> button, which is located next to the milestones option, and now you can start copying these labels by clicking on the <i>New Labels</i> button.
+
+<img width="386" height="64" alt="" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/labelsteps.jpg">
+
+
+#### Organization default repository labels
+If you plan to use these labels across all of your organization's future repositories, then you can go to your organization's <i>settings</i>, navigate to the <i>repository</i> section under <i>"code, planning, and automation"</i>, and click on <i>repository defaults</i>. Then, you can click on the <i>new label</i> button and add the labels. These labels will featured in all of organization's future repositories, but will not be added to already existing repositories, so you will need to add them manually to those. 
+
+Label Name | Description | Manually or Automatically | Label / Status Field
+--- | --- | --- | :---:
+Docs 📝 | Changes to documentation only | Manually | Label
+Feat 🆕 | A new feature | Manually | Label
+Style 🖌️ | Changes to formatting (e.g. the code is missing semicolons) | Manually | Label
+Test ☑️ | Adding/correcting existing tests | Manually | Label
+Refactor 🔁 | A code change which isn't bug fix or adds a feature. It's restructure of the code without changing the functionality | Manually | Label
+BugFix 🐛 | A bug fix | Manually | Label
+Chore 👷‍♂️ | Maintenance or change to auxiliary tools | Manually | Label
+Add ➕ | Adding essentials to the repository (e.g. .gitignore or example files) | Manually | Label
+Backend ⚙️ | When a backend issue is opened, it is automatically given to the issue | Automatically | Label
+Frontend 🖥️ | When a fronted issue is opened, it is automatically given to the issue | Automatically | Label
+Design 🎨 | When a design issue is opened, it is automatically given to the issue | Automatically | Label
+Unassigned ❕ | Currently nobody has been assigned to it | Automatically | Label
+Unlabeled ❗ | No labels have been added | Automatically | Label
+Backlog 📜 | Tasks that have not yet been started or left unfinished | Both | Both
+In Progress 🚧 | Currently in the process of being worked on | Manually | Both
+Ready for Review 🔍 | A pull request has been created and it is ready for review | Manually | Both
+Done ✔️ | Task has been completed or closed | Manually | Both
+
+* When copying and pasting labels, make sure to include any associated emojis.
+
+(<a href="#start">back to Getting Started</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+<!-- Issues forms and pull request template -->
+<h2>
+<a id="issu" href="#issu" aria-hidden="true"></a>
+Issues forms and pull request template
+</h2>
+
+Make sure to add the issue form files to the `.github/ISSUE_TEMPLATE` folder in your repository, and the pull request template goes to the `.github` folder.
+
+Pick them from here:
+Issue forms | Pull request template
+---|---
+<a href="https://github.com/LeDuble/Git-Etiquette/blob/main/.github/ISSUE_TEMPLATE/backend-card.yml">backend-card.yml</a> | <a href="https://github.com/LeDuble/Git-Etiquette/blob/main/pull_request_template.md">pull_request_template.md</a>
+<a href="https://github.com/LeDuble/Git-Etiquette/blob/main/.github/ISSUE_TEMPLATE/design-card.yml">design-card.yml</a> |
+<a href="https://github.com/LeDuble/Git-Etiquette/blob/main/.github/ISSUE_TEMPLATE/frontend-card.yml">frontend-card.yml</a> |
+<!-- <a href="">config.yml</a> | -->
+
+When creating an issue, depending on which one you pick, the form will automatically add one of the three labels (Backend ⚙️, Design 🎨, or Frontend 🖥️). For example, if you select a card related to backend development, it will add the "Backend ⚙️" label.
+
+   <ol>
+   <li>Open a new issue inside the repository.</li>
+   <li>Choose one of the cards or templates (Backend, Frontend, or Design).</li>
+   <ul>- For example if you choose the backend card, then the Backend ⚙️ label will be added.</ul>
+   <ul>- Backlog 📜 label is always added when opening an issue.</ul>
+   <li>Pick one descriptive label from this list: Docs 📝, Feat 🆕, Style 🖌️, Test ☑️, Refactor 🔁, BugFix 🐛, Chore 👷‍♂️, Add ➕ </li>
+   <li>you can add another label from this list: In Progress 🚧, Done ✔️</li>
+   <ul>The label "In Progress 🚧" means that someone is currently working on the issue.</ul>
+   <ul>The label "Done ✔️" indicates that the issue has been completed or closed.</ul>
+   </ol>
+
+   ```mermaid
+
+   %%{init: {'themeVariables': { 'fontSize': '20px'}}}%%
+    graph LR;
+        classDef infoboxcolors fill:#fff2cc, color:#000000;
+        classDef firstboxcolors fill:#dae8fc, color:#000000;
+        classDef secondboxcolors fill:#e1d5e7, color:#000000;
+        classDef thirdboxcolors fill:#d5e8d4, color:#000000;
+
+    subgraph Main
+    style Main color:#00000000, fill:#00000000, stroke:#f66, stroke-width:2px, stroke-dasharray:5 5
+    
+    subgraph .
+    style . color:#00000000, fill:#00000000, stroke-width:3px, stroke:#f66
+        subgraph 1.
+        style 1. color:#272B30, stroke:#f66, fill:#f8cecc
+    end
+
+        X([Open an issue])-->A[Project];
+        class X infoboxcolors;
+        class A firstboxcolors;
+        end
+    
+    subgraph ..
+    style .. color:#00000000, fill:#00000000, stroke-width:3px, stroke:#f66
+        subgraph 2.
+        style 2. color:#272B30, stroke:#f66, fill:#f8cecc
+    end
+
+        A-.->XX([Choose</br> a template]);
+        class XX infoboxcolors;
+
+        XX-->B((Backend)) & C((Frontend)) & D((Design));
+        class B,C,D secondboxcolors;
+        end
+
+    subgraph ...
+    style ... color:#00000000, fill:#00000000, stroke-width:3px, stroke:#f66
+        subgraph 3.
+        style 3. color:#272B30, stroke:#f66, fill:#f8cecc
+    end
+
+        .... -.->XXX([A more descriptive</br>label</br>is added</br>manually]);
+        class XXX infoboxcolors;
+        XXX-->E(Docs);
+        XXX-->F(Feat);
+        XXX-->G(Style);
+        XXX-->H(Test);
+        XXX-->I(Refactor);
+        XXX-->J(Bugfix);
+        XXX-->K(Chore);
+        XXX-->L(Add);
+        XXX-->R(In Progress);
+        XXX-->S(Done);
+        class E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U thirdboxcolors;
+        end
+    
+    subgraph ....
+    style .... color:#00000000, fill:#00000000, stroke-width:3px, stroke:#f66
+        subgraph 3.
+        style 3. color:#272B30, stroke:#f66, fill:#f8cecc
+    end
+
+        Frontend & Backend & Design & Backlog -.- XXXX([These labels</br>will be automatically</br>added accordingly]);
+        class XXXX infoboxcolors;
+        C-->Frontend(Frontend);
+        B-->Backend(Backend);
+        D-->Design(Design);
+        C & B & D-->Backlog(Backlog);
+        class E,F,G,H,I,J,K,L,M thirdboxcolors;
+        end
+    end
+
+   ```
+   Schema for labeling.
+
+(<a href="#start">back to Getting Started</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+<!-- Workflow file setup -->
+<h2>
+<a id="wfile" href="#wfile" aria-hidden="true"></a>
+Workflow file setup
+</h2>
+
+Variable | Description | Example Organisation / User specific setting |
+--- | --- | ---
+`username` | | User
+`gh_project_token` | | User
+`organization_name` | | Organisation
+`gh_app_key` | | Organisation
+`gh_app_id` | | Organisation
+`gh_app_installation_id` | | Organisation
+`project_number` | | Both
+`project_portfolio_number` | | Both
+
+### Authentication for user
+Create a Personal Access Token (PAT)
+1. Let's begin with creating a PAT by going to the <i>personal settings</i>. From there, go to <i>the developer settings</i> and then click on the <i>personal access tokens</i> on the left menu, which opens a menu of two items. Pick the <i>tokens (classic)</i> from the dropdown menu, and then press the button that says <i>"Generate new token"</i> to generate a new token (classic)
+
+For additional details on creating a PAT, refer to the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#keeping-your-personal-access-tokens-secure">documents</a>
+
+2. Select the following scopes (permissions)
+   * <b>repo</b> - <i>all</i>
+   * <b>admin:org</b> - <i>write:org</i>
+   * <b>admin:org</b> - <i>read:org</i>
+   * <b>project</b> - <i>read:project</i>
+
+3. Save the given token in to your repository secrets and name it as `SECRET_TOKEN` so that the workflow file knows what to look for.
+   
+### Authentication for organisation (via app)
+* Start by creating a Github App under your organization. Follow the instructions in the <a href="https://docs.github.com/en/apps/creating-github-apps/creating-github-apps/creating-a-github-app">documents</a>.
+
+#### App settings
+*  For the newly created Github App, set the following requirements: 
+   * Repository permissions (8 in total) 
+      * <b>Actions</b> - <i>Read and write</i>
+      * <b>Checks</b> - <i>Read and write</i>
+      * <b>Commit statuses</b> - <i>Read only</i>
+      * <b>Contents</b> - <i>Read and write</i>
+      * <b>Environments</b> - <i>Read only</i>
+      * <b>Issues</b> - <i>Read only</i>
+      * <b>Metadata</b> - <i>Read only</i>
+      * <b>Pull requests</b> - <i>Read only</i>
+   * Organization permissions (2 in total)
+      * <b>Members</b> - <i>Read only</i>
+      * <b>Projects</b> - <i>Read and write</i>
+   
+   * Check the <a href="https://docs.github.com/en/apps/maintaining-github-apps/editing-a-github-apps-permissions">documents</a> to see how to edit the permissions of the Github App.
+
+* Go to Optional features (in the app) and opt-out from the following setting:
+   * User-to-server token expiration
+* Generate a private key, treat the file like the password and keep it safe.
+
+#### Installing
+* Install the Github App in the organization
+   * To install the GitHub App in your organization, go to your <i>organization's settings</i>, navigate to <i>Developer settings</i>, select <i>GitHub Apps</i>, click <i>edit</i> next to the app, select <i>Install App</i>, and then click <i>Install</i>.
+
+#### Secrets
+* To make the <i><b>private key</b></i>, <i><b>the GitHub App's installation id</b></i>, and <i><b>the App's id</b></i> accessible to all the repositories in the organization for the workflow file, store the private key as `PRIVATE_KEY`, the GitHub App's installation id as `APP_INSTALLATION_ID`, and the app's id as `APP_ID` as secrets in the organization's settings and actions.
+   * <i><b>The private key</b></i> can be generated within the app itself, by navigating to the app's settings and selecting the Generate Private Key option.
+   * <i><b>App id</b></i> can be found from configuration general page as <i>App ID</i>
+   * To find <i><b>the app installation id</b></i>, navigate to your organization's settings, select Github Apps, and then select Configure next to the app. The `app installation id` can be found now in the address bar, like this: `https://github.com/organizations/<organization>/settings/installations/<id>`
+
+#### Finding number of project board
+* Go to the project board and then look in the address bar, it should appear like this: `https://github.com/users/<username>/projects/<number>` and for the organization it should appear like this: `https://github.com/orgs/<organizationname>/projects/<number>`
+* Project id is necessary for the automation.
+
+(<a href="#start">back to Getting Started</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+#### Editing the parameters in WFprojects.yml file
+Only the parameters should be changed that are inside the angle brackets (`<>`). For example, ```username: octocat``` or ```project_number: 1``` (remember to remove anglebrackets).
+
+These parameters can be found org/user related settings in the WFprojects.yml file and are almost at the beginning of the file. 
+
+* User related settings (only edit these).
+```  # ----------------- user related settings (only edit these) ----------------- #
+username: <username>
+gh_project_token: ${{ secrets.SECRET_TOKEN }}
+project_number: <projectid>
+```
+* Organization related settings.
+``` # ----------------- org related settings (only edit these) ----------------- #
+organization_name: <organization>
+gh_app_key: ${{ secrets.APP_SECRET_KEY }}
+gh_app_id: ${{ secrets.APP_ID }}
+gh_app_installation_id: ${{ secrets.APP_INSTALLATION_ID }}
+project_number: <projectid>
+```
+
+<!-- Base tree for repository -->
+<h2>
+<a id="base" href="#base" aria-hidden="true"></a>
+
+
+Base tree for repository
+</h2>
+In the end the base of the repository should look like this:
+
+```text
+.
+├── .github
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── ISSUE_TEMPLATE
+│   │   ├── backend-card.yml
+│   │   ├── design-card.yml
+│   │   ├── frontend-card.yml
+│   │   └── config.yml
+│   ├── workflows
+│   │   └── WFprojects.yaml
+│   └── pull_request_template.md
+├── .gitignore
+└── README.md
+
+3 directories, 10 files
+```
+Excluding .gitignore file. There's topic about .gitignore later in this guide, which I recommend to check out.
+<!-- which you can
+read more about <a href=six>here</a> and how to add it. -->
+
+(<a href="#start">back to Getting Started</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+---
+
 <!-- BEDROCK RULES -->
 <h2>
 <a id="one" href="#one" aria-hidden="true"></a>
