@@ -52,7 +52,6 @@ Table of Contents
 <ul><a href="#issu">- Issues forms and pull request template </a></ul>
 <ul><a href="#wfile">- Workflow file setup </a></ul>
 <ul><a href="#base">- Base tree for repository </a></ul>
-<ul><a href="#two">- </a></ul>
 <li><a href="#gtst">Git strategy and usage</a></li>
 <ul><a href="#bed">- Bedrock Rules</a></ul>
 <ul><a href="#bran">- Branch Strategy</a></ul>
@@ -103,7 +102,6 @@ Getting started
 <li><a href="#issu">Issues forms and pull request template </a></li>
 <li><a href="#wfile">Workflow file setup </a></li>
 <li><a href="#base">Base tree for repository </a></li>
-<li><a href="#two"></a></li>
 </ol>
 
 (<a href="#table-of-contents">back to top</a>)
