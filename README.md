@@ -62,19 +62,19 @@ Table of Contents
 ---
 
 <!-- INTRODUCTION -->
-<h2>
-<a id="descr" href="#descr" aria-hidden="true"></a>
+<h1>
+<a id="intro" href="#intro" aria-hidden="true"></a>
 Introduction
-</h2>
+</h1>
 
-The essence of the Git Etiquette Cheat sheet is to provide standardized workflow frame and foundation for the team. 
+The main focus of Git Etiquette is to provide a standard way of using Git and project management tools that is shared among developers, which helps to ensure that everyone is on the same page and following the same standardized workflow frame. 
 
-By charishing unified workflow means that it is easier to review and track the current history of the project. People will come and go so it's very vital to maintain excellent etiquette. As this allows anyone to join, any time, figure out the process and track the status of the project with ease.
+By following the Etiquette, the team can ensure that their workflow will be more consistent, work will be properly documented and their use of the git will be more efficient.
+Additionally, it provides clear instructions for using Git, which helps to minimize the risk of errors and improves the quality of the work being done.
 
-Background story for the Etiquette:
-I started Git Etiquette Cheat Sheet as my personal project for personal use to create unified and coherent workflow. The main purpose of this was so that others could interpret easier what I'm working with and navigate history effortlessly.
+The background story for Git Etiquette is that it was started as a personal project to create a unified and coherent workflow for personal use. The goal was to make it easier for others to understand the work being done and navigate the history of the project more easily.
 
-Team leader (Joonas) heard about it and asked if I could make it for the whole team.
+My team leader was excited about my personal project I was working on and assigned me to write it up so that the rest of the team could benefit from it.
 
 (<a href="#table-of-contents">back to top</a>)
 
