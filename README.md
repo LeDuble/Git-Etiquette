@@ -770,6 +770,8 @@ Featured organizations, teams, and projects that utilize the Git Etiquette
 How to Contribute
 </h2>
 
+[![Contributors](https://img.shields.io/github/contributors/LeDuble/Git-Etiquette)](https://github.com/LeDuble/Git-Etiquette/graphs/contributors)
+
 1. Clone repository and create a new branch: **__`git checkout https://github.com/LeDuble/Git-Etiquette.git -b <insertBranchNameHere>`__**
 2. Add changes to your branch
 3. Create a Pull Request with descriptive text.
@@ -803,17 +805,4 @@ License
 
 You can read the full license [here](https://github.com/LeDuble/Git-Etiquette/blob/master/LICENSE.md)
 
-
----
-
-<!-- FUTURE UPDATES -->
-<h2>
-<a id="twelve" href="#twelve" aria-hidden="true"></a>
-Future Updates
-</h2>
-TODO
-
-- [ ] TODO
-- [ ] TODO
-- [ ] TODO
-- [ ] TODO
+(<a href="#table-of-contents">back to top</a>)
