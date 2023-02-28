@@ -1,10 +1,42 @@
-<!-- TITLE -->
-<h1 align="center">
+<!-- TITLE / HEADER -->
+<h1 align="left">
 <a id="title" href="#title" aria-hidden="true"></a>
-Git Etiquette and Cheat Sheet
+Git Etiquette
 </h1>
 
-<p align="center">This Git Etiquette and Cheat Sheet is made for The Software Developer Team of DigiTalents Helsinki.</p>
+<p align="center">
+   <img height="180" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/git-etiquette-banner-no-bg.png">
+</p>
+
+<p align="center"> 
+   <b>Standardized workflow frame for teams and individuals.</b>
+
+</p>
+
+<p align="center">
+   <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+    <img title="License" src="https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue">
+   </a>
+   <a href="http://makeapullrequest.com">
+    <img title="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-success">
+   </a>
+   <a href="https://github.com/LeDuble/Git-Etiquette/graphs/contributors">
+    <img title="Contributors" src="https://img.shields.io/github/contributors/LeDuble/Git-Etiquette">
+   </a>
+   <a href="https://github.com/LeDuble/Git-Etiquette">
+    <img title="Star on GitHub" src="https://img.shields.io/github/stars/LeDuble/Git-Etiquette.svg?style=social&label=Star">
+   </a>
+</p>
+
+<!-- Features -->
+<h1>
+<a id="feat" href="#feat" aria-hidden="true"></a>
+Features
+</h1>
+
+- **Git strategy for branching**  
+- **Issues, labels and project board automation**    
+- **Git command cheat sheet**
 
 <!-- TABLE OF CONTENTS -->
 <h2>
@@ -34,9 +66,6 @@ Table of Contents
 <a id="descr" href="#descr" aria-hidden="true"></a>
 Introduction
 </h2>
-
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success)](http://makeapullrequest.com)
-[![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 The essence of the Git Etiquette Cheat sheet is to provide standardized workflow frame and foundation for the team. 
 
