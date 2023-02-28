@@ -422,9 +422,23 @@ read more about <a href=six>here</a> and how to add it. -->
 
 ---
 
+<!-- Git strategy and usage -->
+<h1>
+<a id="gtst" href="#gtst" aria-hidden="true"></a>
+Git strategy and usage
+</h1>
+
+<ol>
+<li><a href="#bed">Bedrock Rules</a></li>
+<li><a href="#bran">Branch Strategy</a></li>
+<li><a href="#form">Formatting Rules</a></li>
+</ol>
+
+(<a href="#table-of-contents">back to top</a>)
+
 <!-- BEDROCK RULES -->
 <h2>
-<a id="one" href="#one" aria-hidden="true"></a>
+<a id="bed" href="#bed" aria-hidden="true"></a>
 Bedrock Rules
 </h2>
 
@@ -440,9 +454,89 @@ Bedrock Rules
       * Key sentence: Quality Over Quantity 
 5. **Always ask if unsure**
 
+(<a href="#gtst">back to Git Strategy and Usage</a>)
+
 (<a href="#table-of-contents">back to top</a>)
 
----
+<!-- Branching Strategy -->
+<h2>
+<a id="bran" href="#bran" aria-hidden="true"></a>
+Branching Strategy
+</h2>
+
+<img align="right" width="242" height="622" alt="" src="https://github.com/LeDuble/Git-Etiquettes/blob/main/imgs/logos_tms_orgs/GitStrategySimplified.png">
+The strategy is based on the Git Flow strategy, where each feature (or issue) is represented by a separate branch. Every new branch created is a feature that is being added or worked for the project. The main branch is the production branch, which is the version that is sent to the customer and is always the working one. The dev branch is where all the feature branches are pull requested to aka merged.
+
+The actual Git Flow strategy also includes release and hotfix branches, which are not included in this strategy. Additonally, version numbering is missing, which might be added later.
+
+### Strategy guideline
+
+#### Branches
+Name | Description
+--- | ---
+main | A production branch
+dev | A development branch
+feature branches | Each issue is one feature branch
+#### Merging
+* The merge order is from feature branch to development branch, and then from development branch to main branch. This order ensures that changes are tested in the development branch before they are merged in to the main branch. 
+   * Simply said: the merge order is: feature > dev > main.
+* Always open pull request from feature branch to dev branch (never to main!).
+* Each issue equals to one feature which is represented by one feature branch.
+* Always open pull request, instead of merging straight to the branch! This ensures that changes are peer reviewed and any potential problems can be identified before the changes are applied to the branch. Even if the problems were accepted via a pull request, it is still easy to revert back if needed.
+
+#### Naming conventions for the branches
+* In the two next sections, you can find instructions on how to properly format the branches in order to ensure the team is following a consistent workflow and that the branches are properly documented.
+
+#### 
+
+(<a href="#gtst">back to Git Strategy and Usage</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+<!-- FORMATTING RULES -->
+<h2>
+<a id="form" href="#form" aria-hidden="true"></a>
+Formatting Rules for a Branch (Type/Reference ID/Description)
+<!-- Formatting Rules for a Branch Creation -->
+</h2>
+
+### 1. Type
+   * **Docs** - Changes to documentation only
+   * **Feat** - A new feature
+   * **Style** - Changes to formatting (e.g. the code is missing semicolons)
+   * **Test** - Adding/correcting existing tests
+   * **Refactor** - A code change which isn't bug fix or adds a feature. It's restructure of the code without changing the functionality
+   * **BugFix** - A bug fix
+   * **Chore** - Maintenance or change to auxiliary tools
+   * **Add** - Adding essentials to the repository (e.g. .gitignore or example files)
+
+### 2. Reference ID
+   Reference the issue from GitHub, Trello or some other agile source. 
+   For now use one of the two formats shown below.
+   * Referencing an issue from Github: **__issue(_insert number here_)__** or just **__hashtag + number__** (e.g. **_/issue12/_** or **_/#12/_**)
+   * Referencing from Trello: **__trello(_insert number here_)__** (e.g **_/trello8/_**) 
+
+### 3. Description
+   Short Description that is 1-3 words long and separated by hyphens aka " - ". 
+   Briefly describes what is done or worked on.
+
+### Examples
+
+
+Good Examples :+1: | Bad Examples :-1:
+------------ | -------------
+:heavy_check_mark: `add/issue12/gitignore` | :x: `something/bug12/do_S*ame<`
+:heavy_check_mark: `style/8/added-missing-semicolons` | :x: `hi/TeSt/ääliö`
+:heavy_check_mark: `fix/trello1/serializer` | :x: `fiX/TreLlo1/SeRiAlIzeR`
+
+**Note:**
+Only use allowed special characters which are " / " and " - " when formatting the branch!
+
+(<a href="#gtst">back to Git Strategy and Usage</a>)
+
+(<a href="#table-of-contents">back to top</a>)
+
+--
 
 <!-- FORMATTING RULES -->
 <h2>
