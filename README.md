@@ -710,39 +710,44 @@ Becaution here as this will DELETE the file (or files) that is specified in the 
 
 <!-- CHEAT SHEET -->
 <h2>
-<a id="eight" href="#eight" aria-hidden="true"></a>
+<a id="chtsht" href="#chtsht" aria-hidden="true"></a>
 Cheat Sheet
 </h2>
 
-:large_orange_diamond: <a href="#three">Creating a branch</a> | Description
-:------------ | :------------:
-<img width=500px/> | <img width=500px/>
-:small_orange_diamond: `git branch -a` | See all available branches
-:small_orange_diamond: `git checkout -b <insertBranchNameHere>` | Create a new branch
-:small_orange_diamond: `git switch <insertBranchNameHere>` | Switch between branches
+### :large_orange_diamond: <a href="#three">Creating a branch</a>
+Command | Description | Frequently used?
+------------ | ------------ | :------------:
+`git pull` | Before starting a pull command, it is important to make sure that your working copy is clean and free of any uncommitted local changes. To accomplish this, you can use git's Stash feature to save your local changes temporarily so that they are not overwritten when you pull. This will ensure that any changes you make to the repository are safe and secure. |
+`git branch -a` | See all available branches | :+1:
+`git checkout -b <insert example: chore/#12/gitignore>` | Create a new branch | :wavy_dash:
+`git switch <insertBranchNameHere>` | Switch between branches | :+1:
 
-:large_blue_diamond: <a href="#three">Adding files to a branch (not master)</a> | Description
-:------------ | :------------:
-<img width=500px/> | <img width=500px/>
-:small_blue_diamond: `git add -i` | Interactive menu
-:small_blue_diamond: `git status` | Files tracked by Git
-:small_blue_diamond: `git restore --staged <insertFileNameToUnstage>` | Unstage unwanted file(s)
-:small_blue_diamond: `git commit -m "<insertCommentsHere>"` | Record changes to the repository
-:small_blue_diamond: `git push --set-upstream origin <insertBranchNameHere>` | Push staged files in to a branch
+### :large_blue_diamond: <a href="#three">Adding files to a branch (not master)</a>
+Command | Description | Frequently used?
+------------ | ------------ | :------------:
+`git add -i` | Interactive menu | :+1:
+`git status` | Files tracked by Git | :+1:
+`git restore --staged <insertFileNameToUnstage>` | Unstage unwanted file(s) | :wavy_dash:
+`git commit -m "<insertCommentsHere>"` | Record changes to the </br>repository | :+1:
+`git push --set-upstream origin <insertBranchNameHere>` | Push staged files in to </br>a branch | :+1:
 
-:white_medium_square: <a href="#four">Merging branches</a> | Description
-:------------ | :------------:
-<img width=500px/> | <img width=500px/>
-:white_small_square: `git add -i` | Interactive menu
-:white_small_square: `git commit -m "<insertCommentsHere>"` | Record changes to the repository
-:white_small_square: `git switch master` | Switch to master branch
-:white_small_square: `git merge <insertBranchNameHere> --no-ff` | Merges a branch into master
+### :red_square: <a href="#five">Deleting branches</a>
+Command | Description | Frequently used?
+------------ | ------------ | :------------:
+`git branch -d <insertLocalBranchNameHere>` | Delete local branch | :wavy_dash:
+`git push origin --delete <insertRemoteBranchNameHere>` | Delete remote branch | :wavy_dash:
 
-:red_square: <a href="#five">Deleting branches</a> | Description
-:------------ | :------------:
-<img width=500px/> | <img width=500px/>
-:small_red_triangle: `git branch -d <insertLocalBranchNameHere>` | Delete local branch
-:small_red_triangle: `git push origin --delete <insertRemoteBranchNameHere>` | Delete remote branch
+### :white_medium_square: <a href="#four">Merging branches</a>
+note: merging directly to master or main is not generally recommended, always do a pull request! ! !
+Command | Description | Frequently used?
+------------ | ------------ | :------------:
+`git add -i` | Interactive menu | :+1:
+`git commit -m "<insertCommentsHere>"` | Record changes to the repository | :+1:
+`git switch master` | Switch to master | :+1:
+`git merge <insertBranchNameHere> --no-ff` | Merges a branch into master | :-1:
+
+### Git Flow Strategy Cheat Sheet as in schema
+[![GitFlow](https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/GitStrategyCheatSheet.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 (<a href="#table-of-contents">back to top</a>)
 
