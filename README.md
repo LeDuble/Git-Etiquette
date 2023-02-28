@@ -294,13 +294,17 @@ Cheat Sheet
 
 ---
 
-<!-- AUTHOR -->
+<!-- EXAMPLES -->
 <h2>
-<a id="nine" href="#nine" aria-hidden="true"></a>
-Author
+<a id="orgs" href="#orgs" aria-hidden="true"></a>
+Featured organizations, teams, and projects that utilize the Git Etiquette
 </h2>
 
-* [Raja Rana (LeDuble)](https://github.com/LeDuble/)
+| <a href=https://github.com/VirittamoHelsinki>Virittämö Helsinki</a> | <a href=https://github.com/VirittamoHelsinki/aava-backend>Aava</a>
+:-------------------------:|:-------------------------:|
+<img width="200" height="200" alt="" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/logohkv.jpg"> | <img width="200" height="200" alt="" src="https://github.com/LeDuble/Git-Etiquette/blob/main/imgs/logos_tms_orgs/aava.png">
+
+
 
 (<a href="#table-of-contents">back to top</a>)
 
@@ -318,6 +322,18 @@ How to Contribute
 4. Leave a star :star_struck:
 
 Feed back and suggestions are welcome! 
+
+(<a href="#table-of-contents">back to top</a>)
+
+---
+
+<!-- AUTHOR -->
+<h2>
+<a id="nine" href="#nine" aria-hidden="true"></a>
+Author
+</h2>
+
+* [LeDuble](https://github.com/LeDuble/)
 
 (<a href="#table-of-contents">back to top</a>)
 
