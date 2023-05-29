@@ -545,48 +545,6 @@ Only use allowed special characters which are " / " and " - " when formatting th
 
 (<a href="#table-of-contents">back to top</a>)
 
---
-
-<!-- FORMATTING RULES -->
-<h2>
-<a id="two" href="#two" aria-hidden="true"></a>
-Formatting Rules for a Branch (Type/Reference ID/Description)
-</h2>
-
-### 1. Type
-   * **Docs** - Changes to documentation only
-   * **Feat** - A new feature
-   * **Style** - Changes to formatting (e.g. the code is missing semicolons).
-   * **Test** - Adding/correcting existing tests.
-   * **Refactor** - A code change which isn't bug fix or adds a feature. It's restructure of the code without changing the functionality.
-   * **BugFix** - A bug fix.
-   * **Chore** - Maintenance or change to auxiliary tools.
-   * **Add** - Adding essentials to the repository (e.g. .gitignore or example files).
-
-### 2. Reference ID
-   Reference the issue from GitHub, Trello or some other agile source. 
-   For now use one of the two formats shown below.
-   * Referencing an issue from Github: **__issue(_insert number here_)__** or just **__number__** (e.g. **_/issue12/_** or **_/12/_**)
-   * Referencing from Trello: **__trello(_insert number here_)__** (e.g **_/trello8/_**) 
-
-### 3. Description
-   Short Description that is 1-3 words long and separated by hyphens aka " - ". 
-   Briefly describes what is done or worked on.
-
-### Examples
-
-
-Good Examples :+1: | Bad Examples :-1:
------------- | -------------
-:heavy_check_mark: `add/issue12/gitignore` | :x: `something/bug12/do_S*ame<`
-:heavy_check_mark: `style/8/added-missing-semicolons` | :x: `hi/TeSt/ääliö`
-:heavy_check_mark: `fix/trello1/serializer` | :x: `fiX/TreLlo1/SeRiAlIzeR`
-
-**Note:**
-Only use allowed special characters which are " / " and " - " when formatting the branch!
-
-(<a href="#table-of-contents">back to top</a>)
-
 ---
 
 <!-- USEFUL GIT COMMANDS  -->
